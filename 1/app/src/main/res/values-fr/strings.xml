@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Leçon 21</string>
+    <string name="second_fragment">Deuxième extrait</string>
+    <string name="third_fragment">Troisième extrait</string>
+    <string name="click">Pressez</string>
+</resources>
