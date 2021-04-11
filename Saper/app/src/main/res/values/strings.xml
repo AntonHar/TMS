@@ -2,5 +2,6 @@
     <string name="app_name">Saper</string>
     <string name="Easy">Easy</string>
     <string name="Medium">Medium</string>
+    <string name="Start">You need to choose the difficulty</string>
 
 </resources>
