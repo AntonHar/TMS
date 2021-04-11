@@ -1,7 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity" />
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEasy"
+        android:layout_margin="5dp"
+         />
+
+    <Button
+        android:id="@+id/buttonEasy"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Easy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/Theme.Button"
+        android:layout_margin="10dp"
+        />
+
+    <Button
+        android:id="@+id/buttonMedium"
+        style="@style/Theme.Button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Medium"
+        app:layout_constraintStart_toEndOf="@+id/buttonEasy"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
